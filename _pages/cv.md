@@ -7,58 +7,42 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<style>
+.pdf-container {
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  margin: 20px 0;
+}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+.pdf-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0 20px 0;
+  background-color: #52adc8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+.download-button:hover {
+  background-color: #3d8ca8;
+  color: white;
+}
+</style>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<a href="/files/resume.pdf" class="download-button" download>📄 Download PDF Resume</a>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+<div class="pdf-container">
+  <iframe src="/files/resume.pdf" type="application/pdf">
+    <p>Your browser does not support PDFs. 
+    <a href="/files/resume.pdf">Download the PDF</a> instead.</p>
+  </iframe>
+</div>
