@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a year-3 BSc student in [Data Science and Technology](https://dsct.hkust.edu.hk/) at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) (HKUST). I will be an exchange student at [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/en/) (EPFL) in the Computer Science section. My research interests primarily focus on **computer vision** and **machine learning**. Specifically, I am particularly interested in developing fundamental methods to fully leverage large-scale world knowledge. My recent interests are particularly centered on **3D vision**. 
+I am a third-year BSc student in [Data Science and Technology](https://dsct.hkust.edu.hk/) at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) (HKUST). I will be an exchange student at [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/en/) (EPFL) in the Computer Science section. My research interests primarily focus on **computer vision** and **machine learning**. Specifically, I am particularly interested in developing fundamental methods to fully leverage large-scale world knowledge. My recent interests are particularly centered on **3D vision**. 
 
 I have been fortunate to work with [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/) and [Prof. Yu-Wing Tai](https://yuwingtai.github.io/) on computer vision and multi-modal reasoning, and [Prof. Xiaomeng Li](https://xmengli.github.io/) on medical image analysis.
 
