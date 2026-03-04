@@ -1,0 +1,382 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+
+
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumePublication}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \parbox[t]{0.78\textwidth}{\footnotesize{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Anbang Wang}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \href{https://aawangas.github.io/}{aawangas.github.io} | \href{mailto:awangas@connect.ust.hk}{awangas@connect.ust.hk}
+    }
+\end{center}
+\vspace{-6mm}
+
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/anbang-wang/}{Wang Anbang} | 
+    \socialicon{\faGithub} \href{https://github.com/your-username}{Aawangas}
+    }
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{Hong Kong SAR, China}
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Research Interest}}
+\vspace{1mm}
+\small{
+My research interests primarily focus on computer vision and machine learning. Specifically, I am particularly interested in developing fundamental methods to fully leverage large-scale world knowledge. My recent interests are particularly centered on 3D vision.
+}
+\vspace{-2mm}
+
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{The Hong Kong University of Science and Technology}{Hong Kong SAR, China}
+{BSc in data science and technology}{2023/9 - 2027/9 (expected)}
+\resumeItemListStart
+\item GPA: 4.035/4.3 (top 2\%)
+\resumeItemListEnd
+
+\resumeSubheading
+{École Polytechnique Fédérale de Lausanne}{Lausanne, Switzerland}
+{Exchange Program in Computer Science section}{2026/2 - 2026/7 (expected)}
+
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+\section{\textbf{Publications}}
+
+\resumeSubHeadingListStart
+
+% --- Publication 1: Arxiv ---
+\resumePublication
+  {ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation}
+  {Yuzhuo Ao*, \textbf{Anbang Wang}*, Yu-Wing Tai, Chi-Keung Tang \\ \textit{* Equal contribution.}}
+  {Arxiv}{[\href{https://arxiv.org/abs/2602.15864}{\textcolor{darkblue}{Paper}}] [\href{https://reasonnavi.github.io/}{\textcolor{darkblue}{Project}}]}
+
+% --- Publication 2: MedIA 2025 ---
+\resumePublication
+  {MedSapiens: Taking a Pose to Rethink Medical Imaging Landmark Detection}
+  {Marawan Elbatel*, \textbf{Anbang Wang}*, Keyuan Liu, Kaouther Mouheb, Enrique Almar-Munoz, Lizhuo Lin, Yanqi Yang, Karim Lekadir, Xiaomeng Li \\ \textit{* Equal contribution.}}
+  {MedIA 2025 [Q1, IF: 11.8]}{[\href{https://arxiv.org/abs/2511.04255}{\textcolor{darkblue}{Paper}}] [\href{https://github.com/xmed-lab/MedSapiens}{\textcolor{darkblue}{Code}}]}
+
+% --- Publication 3: MICCAI 2025 ---
+\resumePublication
+  {Geometric-Guided Few-Shot Dental Landmark Detection with Human-Centric Foundation Model}
+  {\textbf{Anbang Wang}*, Marawan Elbatel*, Keyuan Liu, Lizhuo Lin, Meng Lan, Yanqi Yang, Xiaomeng Li \\ \textit{* Equal contribution.}}
+  {MICCAI 2025}{[\href{https://link.springer.com/chapter/10.1007/978-3-032-04971-1_19}{\textcolor{darkblue}{Paper}}] [\href{https://github.com/xmed-lab/GeoSapiens}{\textcolor{darkblue}{Code}}]}
+  
+\vspace{-4mm}
+\resumeSubHeadingListEnd
+
+
+\section{\textbf{Projects}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+{ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation}
+{\textbf{Advised by Prof. Chi-Keung Tang And Prof. Yu-Wing Tai}}
+{}
+{}
+  
+\resumeItemListStart
+\item Developed ReasonNavi, a framework that leverages MLLMs for global reasoning and a deterministic planner for local navigation, creating a novel reason-then-act paradigm.
+\item 
+Enabled unified, zero-shot navigation across diverse tasks (object, image, text goals), eliminating the need for task-specific fine-tuning or reinforcement learning.
+\item 
+Demonstrated superior performance over existing methods in efficiency and reliability.
+\resumeItemListEnd
+
+\resumeProject
+  {MedSapiens: Taking a Pose to Rethink Medical Imaging Landmark Detection}
+  {\textbf{Advised by Prof. Xiaomeng Li}}
+  {}
+  {}
+\resumeItemListStart
+  \item
+  Developed MedSapiens by adapting a large-scale human-centric foundation model (Sapiens) for medical anatomical landmark detection, leveraging its inherent spatial pose localization priors across diverse imaging modalities.
+  \item 
+Harmonized heterogeneous datasets across four distinct anatomical regions (head, hand, chest, and legs) into a unified training pipeline, utilizing LoRA and heatmap-based decoding to capture shared spatial hierarchies across diverse clinical tasks.
+\item 
+Established new state-of-the-art (SOTA) performance, outperforming generalist models by 5.26\% and specialist models by 21.81\% in Success Detection Rate (SDR), while achieving a 2.69\% improvement in few-shot generalization on novel tasks.
+\resumeItemListEnd
+
+\resumeProject
+  {Geometric-Guided Few-Shot Dental Landmark Detection with Human-Centric Foundation Model }
+  {\textbf{Advised by Prof. Xiaomeng Li}}
+  {}
+  {}
+\resumeItemListStart
+  \item
+  Engineered a novel few-shot learning framework (GeoSapiens) by creatively adapting a human-centric foundation model (Sapiens) for a challenging medical imaging task.
+  \item 
+Innovated a novel geometric loss function that encodes anatomical structural priors, significantly improving the model's robustness and precision in low-data scenarios.
+\item 
+Achieved state-of-the-art (SOTA) results, outperforming the previous leading method by 8.18\% in Success Detection Rate (SDR) at the clinically-critical 0.5mm precision threshold.
+\resumeItemListEnd
+
+\resumeProject
+{Unsupervised Domain Adaptation for 3D Bone Reconstruction from 2D X-rays}
+{\textbf{Advised by Prof. Xiaomeng Li}} 
+{} 
+
+\resumeItemListStart
+  \item \textbf{Investigated} the challenge of domain shift in 3D bone reconstruction by building a baseline model utilizing the Pixel-Aligned Implicit Function (PiFU) framework.
+  \item \textbf{Implemented} a state-of-the-art unsupervised domain adaptation (UDA) algorithm to enhance the model's generalization capabilities across different X-ray datasets.
+  \item \textbf{Aimed to improve} reconstruction accuracy and robustness on out-of-domain data without requiring costly new annotations from the target domain.
+\resumeItemListEnd
+
+\resumeProject
+{Knowledge Distillation on Skin Lesion Segmentation}
+{\textbf{Advised by Prof. Albert C. S. Chung}} 
+{} 
+{}
+
+% 然后在下方列出这个职位下的项目和贡献
+\resumeItemListStart
+    \item \textbf{Developed} a lightweight segmentation model for skin lesions by designing and implementing a knowledge distillation (KD) pipeline.
+    \item \textbf{Engineered} a student-teacher framework where knowledge from a large, complex model was effectively transferred to a compact student network.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{\textbf{Honors and Awards}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+  \resumeSubItem{HKUST Scholarship for Continuing Undergraduate Students (highest band)}{}
+\resumeSubItem{UROP research travel sponsorship}
+    {}
+  \resumeSubItem{Dean's List for all semesters}
+    {}
+  
+ \resumeHeadingSkillEnd
+
+
+\section{\textbf{Teaching Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {Teaching Assistant of COMP 2711, Discrete Math and its Applications in Computer Science}
+  {HKUST, CSE department}
+  {2024/09 - 2024/12}
+  {}
+  \vspace{1mm}
+\resumeItemListStart
+  \item \textbf{Assist} weekly tutorial sessions for undergraduate students, clarifying core concepts in logic, set theory, graph theory, and combinatorics. 
+  \item \textbf{Provided} regular one-on-one guidance, helping students debug complex proofs and master challenging assignment problems.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-6mm}
+
+\section{\textbf{Academic Engagement and Service}} %<-- 使用这个更专业的标题
+\resumeSubHeadingListStart
+
+  % 条目一：审稿 (服务性质)
+  \item \textbf{Reviewer}, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+
+  \item \textbf{Attendee}, International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), , Daejeon, Republic of Korea, Oct 2025
+
+\resumeSubHeadingListEnd
+
+\vspace{-6mm}
+
+\section{\textbf{Skills}}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{Programming Languages: }
+    {Python (Proficient), C/C++ (Proficient)}
+
+  \resumeSubItem{Frameworks \& Libraries: }
+    {PyTorch, NumPy, Pandas, Scikit-learn, OpenCV} 
+
+  \resumeSubItem{Developer Tools \& OS: }
+    {Git, GitHub, Linux, LaTeX} 
+
+  \resumeSubItem{Languages: }
+    {Mandarin (Native), English (Fluent - IELTS 7.5/9.0)}
+
+\resumeSubHeadingListEnd
+
+\end{document}

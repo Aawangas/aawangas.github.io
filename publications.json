@@ -1,18 +1,43 @@
 {
   "publications": [
     {
-      "title": "ReasonNav: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation",
+      "title": "ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation",
       "authors": [
         "Yuzhuo Ao*",
         "Anbang Wang*",
         "Yu-Wing Tai",
         "Chi-Keung Tang"
       ],
-      "venue": "Under Review (2025)",
+      "venue": "Arxiv (2025)",
       "thumbnail": "",
       "selected": 1,
       "award": "",
-      "links": {}
+      "links": {
+        "pdf": "https://arxiv.org/abs/2602.15864",
+        "project": "https://reasonnavi.github.io/"
+      }
+    },
+    {
+      "title": "MedSapiens: Taking a Pose to Rethink Medical Imaging Landmark Detection",
+      "authors": [
+        "Marawan Elbatel*",
+        "Anbang Wang*",
+        "Keyuan Liu",
+        "Kaouther Mouheb",
+        "Enrique Almar-Munoz",
+        "Lizhuo Lin",
+        "Yanqi Yang",
+        "Karim Lekadir",
+        "Xiaomeng Li"
+      ],
+      "venue": "Medical Image Analysis (MedIA) 2025 [Q1, IF: 11.8]",
+      "thumbnail": "",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2511.04255",
+        "code": "https://github.com/xmed-lab/MedSapiens"
+      }
     },
     {
       "title": "Geometric-Guided Few-Shot Dental Landmark Detection with Human-Centric Foundation Model",
@@ -30,7 +55,7 @@
       "selected": 1,
       "award": "",
       "links": {
-        "pdf": "https://arxiv.org/abs/2507.04710",
+        "pdf": "https://link.springer.com/chapter/10.1007/978-3-032-04971-1_19",
         "code": "https://github.com/xmed-lab/GeoSapiens"
       }
     }
