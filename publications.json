@@ -1,0 +1,38 @@
+{
+  "publications": [
+    {
+      "title": "ReasonNav: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation",
+      "authors": [
+        "Yuzhuo Ao*",
+        "Anbang Wang*",
+        "Yu-Wing Tai",
+        "Chi-Keung Tang"
+      ],
+      "venue": "Under Review (2025)",
+      "thumbnail": "",
+      "selected": 1,
+      "award": "",
+      "links": {}
+    },
+    {
+      "title": "Geometric-Guided Few-Shot Dental Landmark Detection with Human-Centric Foundation Model",
+      "authors": [
+        "Anbang Wang*",
+        "Marawan Elbatel*",
+        "Keyuan Liu",
+        "Lizhuo Lin",
+        "Meng Lan",
+        "Yanqi Yang",
+        "Xiaomeng Li"
+      ],
+      "venue": "International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2025)",
+      "thumbnail": "",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2507.04710",
+        "code": "https://github.com/xmed-lab/GeoSapiens"
+      }
+    }
+  ]
+}
