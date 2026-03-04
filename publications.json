@@ -12,6 +12,7 @@
       "thumbnail": "",
       "selected": 1,
       "award": "",
+      "note": "* Equal contribution",
       "links": {
         "pdf": "https://arxiv.org/abs/2602.15864",
         "project": "https://reasonnavi.github.io/"
@@ -34,6 +35,7 @@
       "thumbnail": "",
       "selected": 1,
       "award": "",
+      "note": "* Equal contribution",
       "links": {
         "pdf": "https://arxiv.org/abs/2511.04255",
         "code": "https://github.com/xmed-lab/MedSapiens"
@@ -54,6 +56,7 @@
       "thumbnail": "",
       "selected": 1,
       "award": "",
+      "note": "* Equal contribution",
       "links": {
         "pdf": "https://link.springer.com/chapter/10.1007/978-3-032-04971-1_19",
         "code": "https://github.com/xmed-lab/GeoSapiens"

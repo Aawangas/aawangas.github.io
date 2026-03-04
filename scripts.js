@@ -124,6 +124,17 @@ function createPublicationElement(publication) {
   authors.innerHTML = authorsHTML;
   content.appendChild(authors);
   
+  // Add note (e.g., "* Equal contribution")
+  if (publication.note && publication.note.length > 0) {
+    const note = document.createElement('div');
+    note.style.fontStyle = 'italic';
+    note.style.fontSize = '0.8rem';
+    note.style.color = '#718096';
+    note.style.marginBottom = '0.3rem';
+    note.textContent = publication.note;
+    content.appendChild(note);
+  }
+
   // Add venue with award if present
   const venueContainer = document.createElement('div');
   venueContainer.className = 'pub-venue-container';
