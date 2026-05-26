@@ -1,6 +1,24 @@
 {
   "publications": [
     {
+      "title": "SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation",
+      "authors": [
+        "Anbang Wang*",
+        "Yuzhuo Ao*",
+        "Shangzhe Wu",
+        "Chi-Keung Tang"
+      ],
+      "venue": "arXiv (2026)",
+      "thumbnail": "",
+      "selected": 1,
+      "award": "",
+      "note": "* Equal contribution",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2603.14152",
+        "project": "https://sk-adapter.github.io/"
+      }
+    },
+    {
       "title": "ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation",
       "authors": [
         "Yuzhuo Ao*",
@@ -8,7 +26,7 @@
         "Yu-Wing Tai",
         "Chi-Keung Tang"
       ],
-      "venue": "Arxiv (2025)",
+      "venue": "arXiv (2026)",
       "thumbnail": "",
       "selected": 1,
       "award": "",
@@ -31,7 +49,7 @@
         "Karim Lekadir",
         "Xiaomeng Li"
       ],
-      "venue": "Medical Image Analysis (MedIA) 2025 [Q1, IF: 11.8]",
+      "venue": "Medical Image Analysis (MedIA) 2026",
       "thumbnail": "",
       "selected": 1,
       "award": "",
