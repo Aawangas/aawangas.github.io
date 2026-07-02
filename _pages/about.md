@@ -13,7 +13,7 @@ I have been fortunate to work with [Prof. Xiaomeng Li](https://xmengli.github.io
 
 Recent News
 ======
-* **May 2026**: Our paper "[SK-Adapter](https://arxiv.org/abs/2603.14152)" is available on arXiv, with the [project page](https://sk-adapter.github.io/) online!
+* **July 2026**: Our paper "[SK-Adapter](https://arxiv.org/abs/2603.14152)" has been accepted to ECCV 2026!
 * **March 2026**: Our paper "MedSapiens" has been accepted to Medical Image Analysis (MedIA) 2026!
 * **February 2026**: Our paper "ReasonNavi" is available on arXiv!
 * **February 2026**: Started exchange at [EPFL](https://www.epfl.ch/en/)!
@@ -26,7 +26,7 @@ Publications
 ======
 * **[SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation](https://arxiv.org/abs/2603.14152)**  
   Anbang Wang\*, Yuzhuo Ao\*, Shangzhe Wu, Chi-Keung Tang  
-  *arXiv, 2026*  
+  *European Conference on Computer Vision (ECCV), 2026*  
   \[[Paper](https://arxiv.org/abs/2603.14152)\] \[[Project Page](https://sk-adapter.github.io/)\]
 
 * **[ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation](https://arxiv.org/abs/2602.15864)**  

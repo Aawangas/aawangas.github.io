@@ -117,15 +117,6 @@
     \vspace{-2.4mm}
 }
 
-\newcommand{\resumePublication}[4]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textit{\footnotesize{#3}} \\
-        \parbox[t]{0.78\textwidth}{\footnotesize{#2}} & \footnotesize{#4}
-    \end{tabular*}
-    \vspace{-2.4mm}
-}
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -177,7 +168,7 @@
 
 \begin{center}
     \small{
-    \href{https://aawangas.github.io/}{aawangas.github.io} | \href{mailto:awangas@connect.ust.hk}{awangas@connect.ust.hk}
+    +86 18853138398 | \href{mailto:awangas@connect.ust.hk}{awangas@connect.ust.hk}
     }
 \end{center}
 \vspace{-6mm}
@@ -186,7 +177,7 @@
 \begin{center}
     \small{
     \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/anbang-wang/}{Wang Anbang} | 
-    \socialicon{\faGithub} \href{https://github.com/your-username}{Aawangas}
+    \socialicon{\faGithub} \href{https://github.com/Aawangas}{Aawangas}
     }
 \end{center}
 \vspace{-6mm}
@@ -227,23 +218,26 @@ My research interests primarily focus on computer vision and machine learning. S
 
 \resumeSubHeadingListStart
 
-% --- Publication 1: Arxiv ---
-\resumePublication
+\resumeProject
+  {SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation}
+  {\begin{tabular}[t]{@{}l@{}}\textbf{Anbang Wang}*, Yuzhuo Ao*, Shangzhe Wu, Chi-Keung Tang \\ \textit{* Equal contribution.}\end{tabular}}
+  {ECCV 2026}{}
+
+\resumeProject
   {ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation}
-  {Yuzhuo Ao*, \textbf{Anbang Wang}*, Yu-Wing Tai, Chi-Keung Tang \\ \textit{* Equal contribution.}}
-  {Arxiv}{[\href{https://arxiv.org/abs/2602.15864}{\textcolor{darkblue}{Paper}}] [\href{https://reasonnavi.github.io/}{\textcolor{darkblue}{Project}}]}
+  {\begin{tabular}[t]{@{}l@{}}Yuzhuo Ao*, \textbf{Anbang Wang}*, Yu-Wing Tai, Chi-Keung Tang \\ \textit{* Equal contribution.}\end{tabular}}
+  {arXiv}
+  {}
 
-% --- Publication 2: MedIA 2025 ---
-\resumePublication
+\resumeProject
   {MedSapiens: Taking a Pose to Rethink Medical Imaging Landmark Detection}
-  {Marawan Elbatel*, \textbf{Anbang Wang}*, Keyuan Liu, Kaouther Mouheb, Enrique Almar-Munoz, Lizhuo Lin, Yanqi Yang, Karim Lekadir, Xiaomeng Li \\ \textit{* Equal contribution.}}
-  {MedIA 2025 [Q1, IF: 11.8]}{[\href{https://arxiv.org/abs/2511.04255}{\textcolor{darkblue}{Paper}}] [\href{https://github.com/xmed-lab/MedSapiens}{\textcolor{darkblue}{Code}}]}
+  {\begin{tabular}[t]{@{}l@{}}Marawan Elbatel*, \textbf{Anbang Wang}*, Keyuan Liu, Kaouther Mouheb, Enrique Almar-Munoz, Lizhuo Lin, Yanqi Yang, \\ Karim Lekadir, Xiaomeng Li \\ \textit{* Equal contribution.}\end{tabular}}
+  {MedIA 2026}{}
 
-% --- Publication 3: MICCAI 2025 ---
-\resumePublication
+\resumeProject
   {Geometric-Guided Few-Shot Dental Landmark Detection with Human-Centric Foundation Model}
-  {\textbf{Anbang Wang}*, Marawan Elbatel*, Keyuan Liu, Lizhuo Lin, Meng Lan, Yanqi Yang, Xiaomeng Li \\ \textit{* Equal contribution.}}
-  {MICCAI 2025}{[\href{https://link.springer.com/chapter/10.1007/978-3-032-04971-1_19}{\textcolor{darkblue}{Paper}}] [\href{https://github.com/xmed-lab/GeoSapiens}{\textcolor{darkblue}{Code}}]}
+  {\begin{tabular}[t]{@{}l@{}}\textbf{Anbang Wang}*, Marawan Elbatel*, Keyuan Liu, Lizhuo Lin, Meng Lan, Yanqi Yang, Xiaomeng Li \\ \textit{* Equal contribution.}\end{tabular}}
+  {MICCAI 2025}{}
   
 \vspace{-4mm}
 \resumeSubHeadingListEnd
@@ -254,10 +248,24 @@ My research interests primarily focus on computer vision and machine learning. S
 \resumeSubHeadingListStart
 
 \resumeProject
+{SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation}
+{\textbf{Advised by Prof. Chi-Keung Tang and Prof. Shangzhe Wu}}
+{2025/11 - 2026/03}
+{{}[\href{https://sk-adapter.github.io/}{\textcolor{darkblue}{\faGlobe}}]}
+
+\resumeItemListStart
+\item Developed SK-Adapter, a lightweight skeleton-based adapter that injects joint-coordinate and topology tokens into a frozen native 3D generation backbone via cross-attention.
+\item 
+Introduced skeletons as first-class structural control signals for precise 3D asset generation, reducing ambiguity from text- or image-only prompts.
+\item 
+Contributed to Objaverse-TMS, a 24k text-mesh-skeleton dataset, and demonstrated robust skeleton-conditioned generation and local 3D editing while preserving geometry and texture quality.
+\resumeItemListEnd
+
+\resumeProject
 {ReasonNavi: Human-Inspired Global Map Reasoning for Zero-Shot Embodied Navigation}
 {\textbf{Advised by Prof. Chi-Keung Tang And Prof. Yu-Wing Tai}}
-{}
-{}
+{2025/06 - 2025/09}
+{{}[\href{https://reasonnavi.github.io/}{\textcolor{darkblue}{\faGlobe}}]}
   
 \resumeItemListStart
 \item Developed ReasonNavi, a framework that leverages MLLMs for global reasoning and a deterministic planner for local navigation, creating a novel reason-then-act paradigm.
@@ -268,24 +276,10 @@ Demonstrated superior performance over existing methods in efficiency and reliab
 \resumeItemListEnd
 
 \resumeProject
-  {MedSapiens: Taking a Pose to Rethink Medical Imaging Landmark Detection}
-  {\textbf{Advised by Prof. Xiaomeng Li}}
-  {}
-  {}
-\resumeItemListStart
-  \item
-  Developed MedSapiens by adapting a large-scale human-centric foundation model (Sapiens) for medical anatomical landmark detection, leveraging its inherent spatial pose localization priors across diverse imaging modalities.
-  \item 
-Harmonized heterogeneous datasets across four distinct anatomical regions (head, hand, chest, and legs) into a unified training pipeline, utilizing LoRA and heatmap-based decoding to capture shared spatial hierarchies across diverse clinical tasks.
-\item 
-Established new state-of-the-art (SOTA) performance, outperforming generalist models by 5.26\% and specialist models by 21.81\% in Success Detection Rate (SDR), while achieving a 2.69\% improvement in few-shot generalization on novel tasks.
-\resumeItemListEnd
-
-\resumeProject
   {Geometric-Guided Few-Shot Dental Landmark Detection with Human-Centric Foundation Model }
   {\textbf{Advised by Prof. Xiaomeng Li}}
-  {}
-  {}
+  {2024/12 - 2025/03}
+  {{}[\href{https://github.com/xmed-lab/GeoSapiens}{\textcolor{darkblue}{\faGithub}}]}
 \resumeItemListStart
   \item
   Engineered a novel few-shot learning framework (GeoSapiens) by creatively adapting a human-centric foundation model (Sapiens) for a challenging medical imaging task.
@@ -296,9 +290,23 @@ Achieved state-of-the-art (SOTA) results, outperforming the previous leading met
 \resumeItemListEnd
 
 \resumeProject
+  {MedSapiens: Taking a Pose to Rethink Medical Imaging Landmark Detection}
+  {\textbf{Advised by Prof. Xiaomeng Li}}
+  {2024/11 - 2025/11}
+  {{}[\href{https://github.com/xmed-lab/MedSapiens}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item
+  Developed MedSapiens by adapting a large-scale human-centric foundation model (Sapiens) for medical anatomical landmark detection, leveraging its inherent spatial pose localization priors across diverse imaging modalities.
+  \item 
+Harmonized heterogeneous datasets across four distinct anatomical regions (head, hand, chest, and legs) into a unified training pipeline, utilizing LoRA and heatmap-based decoding to capture shared spatial hierarchies across diverse clinical tasks.
+\item 
+Established new state-of-the-art (SOTA) performance, outperforming generalist models by 5.26\% and specialist models by 21.81\% in Success Detection Rate (SDR), while achieving a 2.69\% improvement in few-shot generalization on novel tasks.
+\resumeItemListEnd
+
+\resumeProject
 {Unsupervised Domain Adaptation for 3D Bone Reconstruction from 2D X-rays}
 {\textbf{Advised by Prof. Xiaomeng Li}} 
-{} 
+{2024/09 - 2024/11} 
 
 \resumeItemListStart
   \item \textbf{Investigated} the challenge of domain shift in 3D bone reconstruction by building a baseline model utilizing the Pixel-Aligned Implicit Function (PiFU) framework.
@@ -309,8 +317,8 @@ Achieved state-of-the-art (SOTA) results, outperforming the previous leading met
 \resumeProject
 {Knowledge Distillation on Skin Lesion Segmentation}
 {\textbf{Advised by Prof. Albert C. S. Chung}} 
-{} 
-{}
+{2024/01 - 2024/09} 
+{{}[\href{https://github.com/Aawangas/KD_skin_lesion_segmentation}{\textcolor{darkblue}{\faGithub}}]}
 
 % 然后在下方列出这个职位下的项目和贡献
 \resumeItemListStart
@@ -356,7 +364,9 @@ Achieved state-of-the-art (SOTA) results, outperforming the previous leading met
   % 条目一：审稿 (服务性质)
   \item \textbf{Reviewer}, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
 
-  \item \textbf{Attendee}, International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), , Daejeon, Republic of Korea, Oct 2025
+  \item \textbf{Reviewer}, European Conference on Computer Vision (ECCV), 2026
+
+  \item \textbf{Attendee}, International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Daejeon, Republic of Korea, Oct 2025
 
 \resumeSubHeadingListEnd
 
