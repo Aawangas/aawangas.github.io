@@ -60,5 +60,6 @@ Teaching
 Selected Honors
 ======
 * HKUST Scholarship for Continuing Undergraduate Students (highest band)
+* Dr. Wilfred Wong Scholarship
 * Dean's List (all semesters)
 * UROP Research Travel Sponsorship
