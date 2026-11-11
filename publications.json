@@ -1,6 +1,26 @@
 {
   "publications": [
     {
+      "title": "Proxy2World: Learning to Generate Worlds from Lightweight Proxies without Seeing Them",
+      "authors": [
+        "Hongli Xu",
+        "Weilong Yan",
+        "Anbang Wang",
+        "Chunyu Zou",
+        "Siyu Hong",
+        "Jingwei Huang"
+      ],
+      "venue": "arXiv (2026)",
+      "thumbnail": "",
+      "selected": 1,
+      "award": "",
+      "note": "",
+      "links": {
+        "pdf": "https://arxiv.org/abs/2609.35023",
+        "project": "https://dumdumgura.github.io/proxy2world/"
+      }
+    },
+    {
       "title": "SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation",
       "authors": [
         "Anbang Wang*",

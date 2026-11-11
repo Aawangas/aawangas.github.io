@@ -7,12 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year BSc student in [Data Science and Technology](https://dsct.hkust.edu.hk/) at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) (HKUST). I am currently an exchange student at [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/en/) (EPFL) in the Computer Science section. My research interests primarily focus on **computer vision** and **machine learning**. Specifically, I am particularly interested in developing fundamental methods to fully leverage large-scale world knowledge. My recent interests are particularly centered on **3D vision**.
+I am a final-year BSc student in [Data Science and Technology](https://dsct.hkust.edu.hk/) at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) (HKUST). I was an exchange student at [École Polytechnique Fédérale de Lausanne](https://www.epfl.ch/en/) (EPFL) in the Computer Science section in Spring 2026. I am currently a research intern at Tencent, working on video world models. My research interests primarily focus on **computer vision** and **machine learning**. Specifically, I am particularly interested in developing fundamental methods to fully leverage large-scale world knowledge. My recent interests are centered on **3D vision** and **video world models**.
 
-I have been fortunate to work with [Prof. Xiaomeng Li](https://xmengli.github.io/) on medical image analysis, [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/) and [Prof. Yu-Wing Tai](https://yuwingtai.github.io/) on computer vision and multi-modal reasoning, and [Prof. Shangzhe Wu](https://elliottwu.com/) on 3D generation.
+I am fortunate to be advised by [Prof. Yuan Liu](https://liuyuan-pal.github.io) and mentored by [Jingwei Huang](https://scholar.google.com/citations?user=7eJBk1UAAAAJ) on video world models. I have also been fortunate to work with [Prof. Xiaomeng Li](https://xmengli.github.io/) on medical image analysis, [Prof. Chi-Keung Tang](https://cse.hkust.edu.hk/~cktang/) and [Prof. Yu-Wing Tai](https://yuwingtai.github.io/) on computer vision and multi-modal reasoning, and [Prof. Shangzhe Wu](https://elliottwu.com/) on 3D generation.
 
 Recent News
 ======
+* **September 2026**: Our paper "[Proxy2World](https://arxiv.org/abs/2609.35023)" is available on arXiv!
+* **July 2026**: Started a research internship at Tencent, working on video world models.
 * **July 2026**: Our paper "[SK-Adapter](https://arxiv.org/abs/2603.14152)" has been accepted to ECCV 2026!
 * **March 2026**: Our paper "MedSapiens" has been accepted to Medical Image Analysis (MedIA) 2026!
 * **February 2026**: Our paper "ReasonNavi" is available on arXiv!
@@ -24,6 +26,11 @@ Recent News
 
 Publications
 ======
+* **[Proxy2World: Learning to Generate Worlds from Lightweight Proxies without Seeing Them](https://arxiv.org/abs/2609.35023)**  
+  Hongli Xu, Weilong Yan, Anbang Wang, Chunyu Zou, Siyu Hong, Jingwei Huang  
+  *arXiv, 2026*  
+  \[[Paper](https://arxiv.org/abs/2609.35023)\] \[[Project Page](https://dumdumgura.github.io/proxy2world/)\]
+
 * **[SK-Adapter: Skeleton-Based Structural Control for Native 3D Generation](https://arxiv.org/abs/2603.14152)**  
   Anbang Wang\*, Yuzhuo Ao\*, Shangzhe Wu, Chi-Keung Tang  
   *European Conference on Computer Vision (ECCV), 2026*  
